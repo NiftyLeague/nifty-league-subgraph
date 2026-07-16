@@ -15,9 +15,9 @@
   "devDependencies": {
     "@graphprotocol/graph-cli": "0.98.1",
     "@graphprotocol/graph-ts": "0.38.2",
-    "assemblyscript": "0.19.23",
+    "assemblyscript": "0.28.19",
     "matchstick-as": "0.6.0",
-    "wabt": "1.0.24"
+    "wabt": "1.0.39"
   },
   "packageManager": "pnpm@11.13.1",
   "engines": {

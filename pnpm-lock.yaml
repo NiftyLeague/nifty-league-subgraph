@@ -29,14 +29,14 @@ importers:
         specifier: 0.38.2
         version: 0.38.2
       assemblyscript:
-        specifier: 0.19.23
-        version: 0.19.23
+        specifier: 0.28.19
+        version: 0.28.19
       matchstick-as:
         specifier: 0.6.0
         version: 0.6.0
       wabt:
-        specifier: 1.0.24
-        version: 1.0.24
+        specifier: 1.0.39
+        version: 1.0.39
 
 packages:
 
@@ -412,6 +412,11 @@ packages:
     engines: {node: '>=16', npm: '>=7'}
     hasBin: true
 
+  assemblyscript@0.28.19:
+    resolution: {integrity: sha512-yOAlAb9EsrI00oUaf6qUTtTcYYeelG2iC3f1LnA45XUeSlMrp2O2FF5Llj4P+Y84ZiIlh/ciEEpOaPwwmOKq8g==}
+    engines: {node: '>=20', npm: '>=10'}
+    hasBin: true
+
   async@3.2.6:
     resolution: {integrity: sha512-htCUDlxyyCLMgaM3xXg0C0LW2xqfuQ6p05pCEIsXuyQ+a1koYKTuBMzRNwmybfLgvJDMd0r1LTn4+E0Ti6C2AA==}
 
@@ -438,6 +443,10 @@ packages:
 
   binaryen@116.0.0-nightly.20240114:
     resolution: {integrity: sha512-0GZrojJnuhoe+hiwji7QFaL3tBlJoA+KFUN7ouYSDGZLSo9CKM8swQX8n/UcbR0d1VuZKU+nhogNzv423JEu5A==}
+    hasBin: true
+
+  binaryen@130.0.0-nightly.20260609:
+    resolution: {integrity: sha512-Zyl9Tw638x08LDew22YtxdYiUGxn+quzpR3ySIS4Nccv6yAiO5j1Yko9IEPNpj/aBZf71xtD/6hYXsgZ2ye3ew==}
     hasBin: true
 
   bl@1.2.3:
@@ -1665,6 +1674,10 @@ packages:
     resolution: {integrity: sha512-8l7sIOd3i5GWfTWciPL0+ff/FK/deVK2Q6FN+MPz4vfUcD78i2M/49XJTwF6aml91uIiuXJEsLKWMB2cw/mtKg==}
     hasBin: true
 
+  wabt@1.0.39:
+    resolution: {integrity: sha512-ba+dRL/75VQQY7RkU/CgriGbkoWAfS8TDyUlJfJhJ8KhtXgMl5dhNvoPNUcQ9IWRhW8u41glMSuZeTvsYq2rRg==}
+    hasBin: true
+
   wcwidth@1.0.1:
     resolution: {integrity: sha512-XHPEwS0q6TaxcvG85+8EYkbiCux2XtWG2mkc47Ng2A77BQu9+DqIOJldST4HgPkuea7dvKSj5VgX3P1d4rW8Tg==}
 
@@ -2264,6 +2277,11 @@ snapshots:
       binaryen: 116.0.0-nightly.20240114
       long: 5.3.2
 
+  assemblyscript@0.28.19:
+    dependencies:
+      binaryen: 130.0.0-nightly.20260609
+      long: 5.3.2
+
   async@3.2.6: {}
 
   available-typed-arrays@1.0.7:
@@ -2285,6 +2303,8 @@ snapshots:
   binaryen@102.0.0-nightly.20211028: {}
 
   binaryen@116.0.0-nightly.20240114: {}
+
+  binaryen@130.0.0-nightly.20260609: {}
 
   bl@1.2.3:
     dependencies:
@@ -3531,6 +3551,8 @@ snapshots:
   uuid@8.3.2: {}
 
   wabt@1.0.24: {}
+
+  wabt@1.0.39: {}
 
   wcwidth@1.0.1:
     dependencies:
