@@ -3,6 +3,8 @@ name: CI
 on:
   push:
     branches: [main, staging]
+  pull_request:
+    branches: [main, staging]
 
 permissions:
   contents: read
@@ -14,6 +16,7 @@ concurrency:
 jobs:
   quality:
     name: Build, Format, Lint & Type Check
+    if: github.event_name != 'pull_request' || github.head_ref != 'staging'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -46,6 +49,7 @@ jobs:
   security:
     name: Security Scan
     runs-on: ubuntu-latest
+    if: github.event_name != 'pull_request' || github.head_ref != 'staging'
     steps:
       - uses: actions/checkout@v4
       - uses: jdx/mise-action@v2
