@@ -5,8 +5,8 @@ updates:
     target-branch: staging
     schedule:
       interval: weekly
-      day: sunday
-    open-pull-requests-limit: 10
+      day: monday
+    # open-pull-requests-limit: 10  # removed — Weekly Release handles any volume
     groups:
       production-dependencies:
         dependency-type: production
@@ -21,5 +21,5 @@ updates:
     target-branch: staging
     schedule:
       interval: weekly
-      day: sunday
-    open-pull-requests-limit: 5
+      day: monday
+    # open-pull-requests-limit: 5  # removed — Weekly Release handles any volume
