@@ -4,9 +4,6 @@ on:
   # Manual trigger only — no automatic indexing for the subgraph repo
   workflow_dispatch:
 
-permissions:
-  contents: read
-
 jobs:
   search:
     name: Run Algolia Search Scraper
