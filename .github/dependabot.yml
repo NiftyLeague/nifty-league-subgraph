@@ -6,7 +6,7 @@ updates:
     schedule:
       interval: weekly
       day: monday
-    # open-pull-requests-limit: 10  # removed — Weekly Release handles any volume
+    open-pull-requests-limit: 10
     groups:
       production-dependencies:
         dependency-type: production
@@ -22,4 +22,4 @@ updates:
     schedule:
       interval: weekly
       day: monday
-    # open-pull-requests-limit: 5  # removed — Weekly Release handles any volume
+    open-pull-requests-limit: 5
