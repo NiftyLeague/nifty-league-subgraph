@@ -1,6 +1,6 @@
 {
   "name": "nifty-league",
-  "license": "UNLICENSED",
+  "license": "AGPL-3.0-or-later",
   "version": "1.0.5",
   "scripts": {
     "codegen": "graph codegen",
