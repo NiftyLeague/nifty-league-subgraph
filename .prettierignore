@@ -4,3 +4,4 @@ coverage
 generated
 node_modules
 pnpm-lock.yaml
+.code-foundry
